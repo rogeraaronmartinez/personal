@@ -88,3 +88,56 @@ h3, h4 {
   height: 150px;
   border-radius: 5px;
 }
+
+.OpenEChord {
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  border: 10px;
+}
+
+.guitarmain {
+  display: flex;
+  flex-direction: column;
+}
+
+.guitarheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 200px;
+  background-color: rgb(185, 169, 201);
+}
+
+.treyguitar {
+  height: 200px;
+}
+
+#guitarheadertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+
+.guitarlesson {
+  background-color: rgb(214, 229, 245);
+  color: rgb(61, 35, 0);
+  padding-left: 5px;
+}
+
+.guitarmainbody {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.guitarleftpanel {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: antiquewhite;
+  padding: 10px;
+  
+}
