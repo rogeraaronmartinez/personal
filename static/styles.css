@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     height: 200px;
-    background-color: rgb(80,80,00);
+    background-color: rgb(185, 169, 201);
 }
 .toptext {
   display: flex;
@@ -61,22 +61,13 @@
   justify-content: center;
   align-items: center;
   height: 200px;
-  background-color: rgb(80,80,00);
+  background-color: rgb(185, 169, 201);
   height: 50px;
 }
+
 .areaofinterest {
   margin: 10px;
 }
-
-h1 {  
-  color: antiquewhite;
-}
-h3, h4 {
-  color: antiquewhite;
-  padding: 0px;
-  margin: 0px;
-}
-
 
 
 .oliveratnight {
@@ -96,48 +87,76 @@ h3, h4 {
   border: 10px;
 }
 
-.guitarmain {
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.guitarheader {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  margin: 0;
+  padding: 0;
   height: 200px;
   background-color: rgb(185, 169, 201);
 }
 
-.treyguitar {
+#mainHeaderImage {
+  display: flex;
   height: 200px;
+  width: 200px;
 }
 
-#guitarheadertext {
+.headerText {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
 }
 
-.guitarlesson {
+.mainBody {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftBody {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: antiquewhite;
+  
+  width: 200px;
+}
+
+.rightBody {
   background-color: rgb(214, 229, 245);
   color: rgb(61, 35, 0);
   padding-left: 5px;
 }
 
-.guitarmainbody {
+#mainRecipeBody {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: left;
   
 }
 
-.guitarleftpanel {
+.recipeButtons {
   display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: antiquewhite;
-  padding: 30px;
-  
+  flex-direction: row;
+  margin-bottom: 20px;
 }
+
+.recipeButton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+
+
