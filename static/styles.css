@@ -15,6 +15,7 @@
   /* Optional: Makes the sample page fill the window. */
   html,
   body {
+    display: flex;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -25,9 +26,11 @@
   flex-wrap: nowrap;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  
 }
 
-H3, h4 {
+h3, h4 {
   margin: 0;
   padding: 0;
 }
@@ -86,7 +89,6 @@ H3, h4 {
 #mainHeaderImage {
   display: flex;
   flex-grow: 0;
-  flex-shrink: 0;
   justify-self: end;
   height: 200px;
   width: 200px;
@@ -112,6 +114,12 @@ H3, h4 {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
+}
+
+#homeBody {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .leftBody {
