@@ -1,6 +1,7 @@
 * {
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -17,42 +18,25 @@
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-   
-.page {
+  } 
+
+.container {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
-.verytop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 200px;
-    background-color: rgb(185, 169, 201);
-}
-.toptext {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  justify-content: flex-start;
+H3, h4 {
   margin: 0;
   padding: 0;
-  align-items: flex-start;
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 18px;
-    margin: 10px;
+.homeLink {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  
 }
 
 .footer {
@@ -60,6 +44,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-self: flex-end;
   height: 200px;
   background-color: rgb(185, 169, 201);
   height: 50px;
@@ -87,16 +72,10 @@
   border: 10px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .header {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: left;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -106,6 +85,9 @@
 
 #mainHeaderImage {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-self: end;
   height: 200px;
   width: 200px;
 }
@@ -114,20 +96,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: left;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.headerTitle {
+  display: flex;
+  align-self: center;
 }
 
 .mainBody {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
+  width: 100%;
 }
 
 .leftBody {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   color: antiquewhite;
-  
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 200px;
 }
 
@@ -141,7 +134,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  
+  width: 100%;
 }
 
 .recipeButtons {
@@ -150,11 +143,18 @@
   margin-bottom: 20px;
 }
 
-.recipeButton {
+button {
+  display: flex;
+  margin-bottom: 20px;
   margin: 5px;
   padding: 10px 20px;
   font-size: 12px;
   cursor: pointer;
+  border: 8px;
+  border-width: 3px;
+  border-style: double;
+  border-color: blueviolet;
+  border-radius: 8px;
 }
 
 
