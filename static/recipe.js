@@ -1,5 +1,7 @@
 const allRecipeButtons = document.getElementById('allRecipeButtons');
 const recipeIngredientsAndDirections = document.getElementById('recipeIngredientsAndDirections');
+const allRecipeFilterButtons = document.getElementById('allRecipeFilterButtons');
+
 
 /* Sample Recipe Template
     recipe3: {
@@ -314,7 +316,6 @@ function displayRecipe(recipe) {
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Directions:'));
     recipeIngredientsAndDirections.appendChild(directionsList);
 };
-
 
 
 for (const recipeKey in recipes) {
