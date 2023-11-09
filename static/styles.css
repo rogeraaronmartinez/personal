@@ -16,32 +16,30 @@
   html,
   body {
     display: flex;
-    height: 100%;
+    height: fit-content;
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100vh;
   } 
 
 .container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  height: 100%;
   width: 100%;
-  
+  height: 100vh;
 }
 
 h3, h4 {
   margin: 0;
   padding: 0;
-
 }
 
 .homeLink {
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;
-  
 }
 
 .footer {
@@ -59,14 +57,8 @@ h3, h4 {
   margin: 10px;
 }
 
-
-.oliveratnight {
-  opacity: .7;
-  height: 200px;
-}
-
 .icon {
-  height: 200px;
+  height: 150px;
   width: 200px;
   border-radius: 15px;
 }
@@ -84,7 +76,7 @@ h3, h4 {
   flex-direction: row;
   align-items: center;
   margin: 0;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 10px 10px 0px;
   height: 200px;
   background-image: linear-gradient(rgba(19, 17, 150, 0.5), rgba(50, 107, 24, 0.575));
 }
@@ -94,14 +86,16 @@ h3, h4 {
   flex-grow: 0;
   justify-self: end;
   height: 200px;
+  width: 150px;
 }
 
 .headerText {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -116,14 +110,16 @@ h3, h4 {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  
 }
 
 #homeBody {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-image: radial-gradient(black, rgb(65, 65, 65));
+  background-image: radial-gradient(rgb(27, 27, 27), rgb(65, 65, 65));
+  padding: 20px 20px 20px 20px;
+  height: 100%;
 }
 
 .leftBody {
@@ -133,14 +129,16 @@ h3, h4 {
   color: antiquewhite;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 200px;
+  width: 150px;
   padding: 20px 0px 0px 8px;
+  height: 100vh;
 }
 
 .rightBody {
   background-color: rgb(214, 229, 245);
   color: rgb(61, 35, 0);
   padding-left: 5px;
+  height: 100vh;
 }
 
 #mainRecipeBody {
@@ -148,6 +146,7 @@ h3, h4 {
   flex-direction: column;
   align-items: left;
   width: 100%;
+  
 }
 
 .recipeButtons {

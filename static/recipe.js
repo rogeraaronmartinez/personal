@@ -4,8 +4,25 @@ const recipeIngredientsAndDirections = document.getElementById('recipeIngredient
 /* Sample Recipe Template
     recipe3: {
         name: "",
-        ingredients: ["", ""],
-        directions: ["", ""],
+        ingredients: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        directions: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         meal: ["Breakfast", "Lunch", "Dinner", "Appetizer", "Drink", "Dessert", "Side", "Snack"],
         prepTime: ["15 minutes", "30 minutes", "1 hour", "2+ hours"],
         cookTime: ["< 1 hour", "1 hour", "2+ hours"],
@@ -125,12 +142,8 @@ const recipes = {
             "sugar - 2.5% weight of flour (7.5 g)", 
             "instant yeast - 0.5% weight of flour (1.5 g) ",
             "olive/corn/vegetable oil - 10% weight of flour (30 g)", 
-            "water - 50% weight of flour (150 g)",
-            "", 
-            "",
-            "", 
-            "",
-            ""],
+            "water - 50% weight of flour (150 g)"
+            ],
         directions: [
             "Combine the flour, salt, sugar, and yeast in a stand mixer. Stir together, then add the oil and water. Mix together by hand or with the dough hook until a shaggy ball is formed. Cover the bowl loosely and let it rest for 10 minutes. Knead by hand or with a dough hook until the dough is smooth and satiny, about 10 minutes.",
             "Divide the dough into two equal balls and coat them lightly with oil. Transfer to quart-sized lidded deli containers or gallon-sized zipperlock bags. Refrigerate for 3 to 5 days.",
@@ -164,13 +177,13 @@ const recipes = {
             "1/2 tsp celery seeds",
             "1 cup white vinegar",
             "3/4 cup extra virgin olive oil",
-            "1/4 cup chile oil (optional)",
-            ""],
+            "1/4 cup chile oil (optional)"
+            ],
         directions: [
             "To make the Chicago Giardiniera, combine the Serranos, cauliflower, red bell, carrot and celery in a small container. Add the 1/2 cup salt and toss to coat. Cover and let brine in the refrigerator overnight.",
             "The next day, rinse the veggies and discard any collected water. Place the veggies in a mixing bowl and add the sport peppers, green olives, garlic, red pepper flakes, oregano and celery seeds. Toss well.",
             "Transfer to a quart sized mason jar. Add the vinegar and oils. Store in the refrigerator. Best after 2-3 days of sitting.",
-        ],
+            ],
         meal: ["Topping"],
         prepTime: ["30 minutes"],
         cookTime: ["< 1 hour"],
@@ -191,7 +204,7 @@ const recipes = {
             "honey",
             "brown sugar",
             "bbq sauce"
-        ],
+            ],
         directions: [
             "Trim ribs of extra fat or sharp edges and bones sticking out",
             "Remove membrane from back if desired",
@@ -203,7 +216,8 @@ const recipes = {
             "Cook either in smoker or oven at 300 F until internal meat temp reaches 190 degrees F ",
             "Unwrap foil but let ribs sit in the foil juices, just top uncovered",
             "Spread BBQ sauce over the top and cook for another 20 minutes",
-            "Remove from heat, let sit for 20 minutes, then cut and serve"],
+            "Remove from heat, let sit for 20 minutes, then cut and serve"
+            ],
         meal: ["Dinner"],
         prepTime: ["15 minutes"],
         cookTime: ["2+ hours"],
@@ -212,6 +226,65 @@ const recipes = {
         contributor: "Roger Martinez",
         link: ""
     },
+
+    recipe7: {
+        name: "Cranberry Ring",
+        ingredients: [
+            "1 cup fresh cranberries, chopped in blender",
+            "1/2 cup chopped walnuts",
+            "1 pkg 3 ounce cherry jello",
+            "1 small orange, chopped in blender",
+            "1/2 cup sugar",
+            "8 ounces crushed pineapple",
+            "1 cup finely chopped celery",
+            "1 tbsp lemon juice",
+            "1/2 cup pineapple juice (add water to make 1/2 cup)",
+            "1 pkg knox gelatin"
+        ],
+        directions: [
+            "Melt jello in 1 cup hot water and add sugar. Cool.",
+            "Add lemon and pineapple juice",
+            "Add remaining ingredients",
+            "Put in mold and refrigerate until firm"
+        ],
+        meal: ["Side"],
+        prepTime: ["30 minutes"],
+        cookTime: ["< 1 hour"],
+        occasion: ["Any", "Holidays"],
+        notes: "",
+        contributor: "Yolanda Martinez",
+        link: ""
+    },
+
+    recipe8: {
+        name: "Sweet Potatoes",
+        ingredients: [
+            "3 cans sweet potatoes or 3 cups boiled sweet potatoes",
+            "1/3 stick margarine, softened",
+            "1 cup sugar",
+            "1/2 tsp salt",
+            "2 eggs",
+            "1 tsp vanilla",
+            "1 cup brown sugar",
+            "1 stick margarine, softened",
+            "1/2 cup flour",
+            "1 tsp milk",
+            "1 cup chopped pecans"
+        ],
+        directions: [
+            "Mix until creamy and put in oven safe dish",
+            "Mix brown sugar, stick of margarine, flour, and milk until crumbly and spread on top",
+            "Add pecans on top",
+            "Bake at 350 deg. F for 30-45 minutes"
+        ],
+        meal: ["Side"],
+        prepTime: ["15 minutes"],
+        cookTime: ["< 1 hour"],
+        occasion: ["Any", "Holidays", "Weeknight"],
+        notes: "",
+        contributor: "Yolanda Martinez",
+        link: ""
+    }
 
   };
 
