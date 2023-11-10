@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    
     text-align: center;
     /*z-index: 1; Ensure header stays on top of parallax*/
 }
@@ -60,6 +60,15 @@ ul {
     text-align: left;
 }
 
+ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 html {
     scroll-behavior: smooth;
@@ -77,4 +86,13 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.sublist {
+    display: none;
+    text-align: left;
+}
+
+.sublist h2 {
+    margin-bottom: 10px;
 }

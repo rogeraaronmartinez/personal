@@ -14,13 +14,57 @@
         </header>
         <section class="content">
             <img src="./images/meandkarrie.jpg" alt="Me and My Better Half" class="animated-element">
-            <ul class="animated-element">
-                <li>Product Management</li>
-                <li>Web Development</li>
-                <li>Family</li>
-                <li>Hobbies</li>
+            <ul class="animated-element" id="mainList">
+                <li onclick="showSublist('sublist1')">Product Management</li>
+                <li onclick="showSublist('sublist2')">Web Development</li>
+                <li onclick="showSublist('sublist3')">Accomplishments</li>
+                <li onclick="showSublist('sublist4')">Hobbies</li>
             </ul>
+            <div class="sublist" id="sublist1">
+                <h2>Product Management Skills</h2>
+                <ul>
+                    <li>Stakeholder Feedback</li>
+                    <li>Jira Product Breakdown</li>
+                    <li>Miro, Lucid, Balsamiq Wireframing</li>
+                    <li>sAFE, Scrum, Agile Software Development Frameworks</li>
+                    <li>Roadmapping</li>
+                    <li>Customer Journey Mapping</li>
+                    <li>Product Requirements Gathering</li>
+                    <li>Creating and Measuring OKRs and KPIs</li>
+                </ul>
+            </div>
+            <div class="sublist" id="sublist2">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Django</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>CICD and Test Driven Development</li>
+                </ul>
+            </div>
+            <div class="sublist" id="sublist3">
+                <ul>
+                    <li>Managed development and deployment of Saas products for Class 1 Railroads</li>
+                    <li>Named on 4 patents</li>
+                    <li>Primary Product Owner on teams of data scientists, software developers, QA and engineering</li>
+                    <li>Worked in Supply Chain, Transportation and Internet of Things</li>
+
+                </ul>
+            </div>
+            <div class="sublist" id="sublist4">
+                <ul>
+                    <li>I love to workout and exercise regularly</li>
+                    <li>Sauna is another regular occurence</li>
+                    <li>BBQ! Especially smoking on an offset grill</li>
+                    <li>Of course, keeping up with my kids as they grow and participate in sports and school activites</li>
+                </ul>
+            </div>
         </section>
     </div>
+
+    <script src="./static/scripts.js"></script>
 </body>
 </html>
