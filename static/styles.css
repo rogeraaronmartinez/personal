@@ -1,27 +1,20 @@
 * {
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
 }
 
-
+html, body{
+  height: 100%;
+}
 
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  gmp-map {
     height: 100%;
   }
-  
-  /* Optional: Makes the sample page fill the window. */
-  html,
-  body {
-    display: flex;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-  } 
 
 .container {
   display: flex;
@@ -36,21 +29,14 @@ h3, h4 {
   padding: 0;
 }
 
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .homeLink {
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-self: flex-end;
-  height: 200px;
-  background-color: rgb(185, 169, 201);
-  height: 50px;
 }
 
 .areaofinterest {
@@ -60,12 +46,12 @@ h3, h4 {
 .icon {
   height: 150px;
   width: 200px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .guitarimages {
   height: 300px;
-  padding: 5px;
+  padding: 20px 20px 20px 20px;
   margin: 0;
   border: 10px;
 }
@@ -76,8 +62,8 @@ h3, h4 {
   flex-direction: row;
   align-items: center;
   margin: 0;
-  padding: 0px 10px 10px 0px;
-  height: 200px;
+  padding: 20px 10px 10px 0px;
+  height: 100px;
   background-image: linear-gradient(rgba(19, 17, 150, 0.5), rgba(50, 107, 24, 0.575));
 }
 
@@ -95,7 +81,6 @@ h3, h4 {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -119,7 +104,11 @@ h3, h4 {
   flex-direction: row;
   background-image: radial-gradient(rgb(27, 27, 27), rgb(65, 65, 65));
   padding: 20px 20px 20px 20px;
-  height: 100%;
+  height: inherit;
+}
+
+ol, ul {
+  padding-left: 40px;
 }
 
 .leftBody {
@@ -127,18 +116,16 @@ h3, h4 {
   flex-direction: column;
   background-color: rgb(17, 17, 17);
   color: antiquewhite;
-  flex-grow: 0;
   flex-shrink: 0;
   width: 150px;
   padding: 20px 0px 0px 8px;
-  height: 100vh;
+  
 }
 
 .rightBody {
   background-color: rgb(214, 229, 245);
   color: rgb(61, 35, 0);
-  padding-left: 5px;
-  height: 100vh;
+  padding: 20px 10px 10px 10px;
 }
 
 #mainRecipeBody {
@@ -146,7 +133,7 @@ h3, h4 {
   flex-direction: column;
   align-items: left;
   width: 100%;
-  
+  flex-grow: 1;
 }
 
 .recipeButtons {
