@@ -286,6 +286,90 @@ const recipes = {
         notes: "",
         contributor: "Yolanda Martinez",
         link: ""
+    },
+
+    recipe9: {
+        name: "Joey's Salsa",
+        ingredients: [
+            "12 large roma tomatoes",
+            "1 large white onion",
+            "8 garlic cloves",
+            "3 serrano peppers, de-veined and seeded",
+            "cilantro",
+            "extra virgin olive oil"
+        ],
+        directions: [
+            "Saute oil, tomatoes, onion, garlic and peppers, 3-4 minutes on each side",
+            "Transfer to blender with cilantro and 1 ounce water, blend to desired consistency",
+            "Return to pan and cook on medium heat, about 7-10 minutes, stirring"
+        ],
+        meal: ["Side"],
+        prepTime: ["15 minutes"],
+        cookTime: ["< 1 hour"],
+        occasion: ["Any", "Holidays", "Weeknight"],
+        notes: "",
+        contributor: "Jose Martinez",
+        link: ""
+    },
+
+    recipe10: {
+        name: "Orange Almond Biscotti",
+        ingredients: [
+            "3 1/4 cups flour",
+            "1 tbsp baking powder",
+            "1 tsp sea salt, crushed",
+            "1 cup sugar",
+            "1/2 cup unsalted butter, melted",
+            "3 eggs",
+            "1 tbsp vanilla extract",
+            "orange zest from 2 navel oranges",
+            "1 cup sliced almonds",
+            "1 egg white"
+        ],
+        directions: [
+            "Position rack in center of oven, preheat to 350 F",
+            "Line baking sheet with parchment paper",
+            "Sift flour, baking powder and salt into medium bowl",
+            "In a large bowl, mix sugar, butter, 3 eggs, vanilla extract and orange zest",
+            "Add flour mixture to egg mixture and stir with wooden spoon until blended",
+            "Mix in almonds",
+            "Divide dough in half and with floured hands shape each part into 13.5 in. long by 2.5 in. wide logs ",
+            "Transfer both logs to baking sheet",
+            "Whisk egg white until foamy, add sea salt and brush over top and sides of logs.",
+            "Bake until golden brown, about 25 minutes, rotate sheet after 12 minutes",
+            "Cool completely, about 25 minutes, but keep oven on",
+            "Slice into 1 inch slices and return to oven and continue baking until crisp, about 10 minutes each side"
+        ],
+        meal: ["Breakfast", "Lunch", "Dinner", "Appetizer", "Side", "Snack"],
+        prepTime: ["30 minutes"],
+        cookTime: ["1 hour"],
+        occasion: ["Any", "Holidays"],
+        notes: "",
+        contributor: "Yolanda Martinez",
+        link: ""
+    },
+
+    recipe11: {
+        name: "Slow Cooked Barbacoa",
+        ingredients: [
+            "3 lbs beef cheeks (trim excess fat)",
+            "2.5 tsp coarse sea salt (1.5 if fine salt)",
+            "1/2 small onion",
+            "4 cloves garlic",
+            "1/4 - 1/2 tsp crushed black pepper",
+            "2 large bay leaves"
+        ],
+        directions: [
+            "Add to slow cooker",
+            "Cook on low setting for 12 hours"
+        ],
+        meal: ["Breakfast", "Lunch", "Dinner"],
+        prepTime: ["15 minutes"],
+        cookTime: ["2+ hours"],
+        occasion: ["Any", "Holidays"],
+        notes: "From Simply Mama Cooks on YouTube",
+        contributor: "Jose Cantu",
+        link: "https://www.youtube.com/watch?v=W_PzanPAOr0&t=29"
     }
 
   };
@@ -295,6 +379,8 @@ function displayRecipe(recipe) {
     const recipeName = document.createElement('h2');
     recipeName.textContent = recipe.name;
     
+    
+
     const ingredientsList = document.createElement('ul');
     recipe.ingredients.forEach(ingredient => {
         const listItem = document.createElement('li');
@@ -311,8 +397,17 @@ function displayRecipe(recipe) {
 
     recipeIngredientsAndDirections.innerHTML = '';
     recipeIngredientsAndDirections.appendChild(recipeName);
+    recipeIngredientsAndDirections.appendChild(document.createTextNode('Contributed By: ' + recipe.contributor ));
+    recipeIngredientsAndDirections.appendChild(document.createElement("br"));
+    recipeIngredientsAndDirections.appendChild(document.createTextNode('Notes: ' + recipe.notes ));
+    recipeIngredientsAndDirections.appendChild(document.createElement("br"));
+    recipeIngredientsAndDirections.appendChild(document.createTextNode('Link to Recipe: ' + recipe.link ));
+
+    recipeIngredientsAndDirections.appendChild(document.createElement("br"));
+    recipeIngredientsAndDirections.appendChild(document.createElement("br"));
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Ingredients:'));
     recipeIngredientsAndDirections.appendChild(ingredientsList);
+    recipeIngredientsAndDirections.appendChild(document.createElement("br"));
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Directions:'));
     recipeIngredientsAndDirections.appendChild(directionsList);
 };

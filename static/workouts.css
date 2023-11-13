@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+.animated-header {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+    animation: shiftUp 10s linear infinite;
+    background: url(../images/backgroundbokeh.jpg);
+}
+
+@keyframes shiftUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}

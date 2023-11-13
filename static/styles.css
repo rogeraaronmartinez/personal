@@ -140,22 +140,22 @@ ol, ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 button {
   display: flex;
-  margin-bottom: 20px;
-  margin: 5px;
-  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin: 2px;
+  padding: 6px 6px;
   font-size: 12px;
   cursor: pointer;
   border: 8px;
   border-width: 3px;
   border-style: double;
-  border-color: blueviolet;
+  border-color: rgb(85, 179, 101);
   border-radius: 8px;
-  background-color: rgb(50, 42, 165);
+  background-color: rgb(44, 30, 236);
   color: blanchedalmond;
 }
 
