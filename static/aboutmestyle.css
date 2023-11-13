@@ -91,8 +91,11 @@ html {
 .sublist {
     display: none;
     text-align: left;
+    color: rgb(127, 255, 155);
+    border-color: rgb(71, 104, 211);
 }
 
 .sublist h2 {
     margin-bottom: 10px;
 }
+
