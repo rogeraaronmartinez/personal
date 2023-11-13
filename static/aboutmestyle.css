@@ -18,14 +18,17 @@ body {
 }
 
 header {
-    
+    display: flex;
+    flex-direction: column;
     text-align: center;
     /*z-index: 1; Ensure header stays on top of parallax*/
 }
 
 header a {
-    color: #fff;
+    color: #4d9743;
     text-decoration: none;
+    align-items: end;
+    
 }
 
 header h1 {
