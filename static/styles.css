@@ -6,9 +6,7 @@
   
 }
 
-html, body{
-  height: 100%;
-}
+
 
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
@@ -21,7 +19,7 @@ html, body{
   flex-wrap: nowrap;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 h3, h4 {
@@ -40,13 +38,14 @@ h2 {
 }
 
 .areaofinterest {
-  margin: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .icon {
-  height: 150px;
-  width: 200px;
-  border-radius: 30px;
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
 }
 
 .guitarimages {
@@ -95,7 +94,7 @@ h2 {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  
+  min-height: 100hv;
 }
 
 #homeBody {
@@ -104,7 +103,9 @@ h2 {
   flex-direction: row;
   background-image: radial-gradient(rgb(27, 27, 27), rgb(65, 65, 65));
   padding: 20px 20px 20px 20px;
-  height: inherit;
+  min-height: 100vh;
+  justify-content: space-around;
+  
 }
 
 ol, ul {
@@ -126,6 +127,7 @@ ol, ul {
   background-color: rgb(214, 229, 245);
   color: rgb(61, 35, 0);
   padding: 20px 10px 10px 10px;
+  
 }
 
 #mainRecipeBody {
@@ -134,6 +136,7 @@ ol, ul {
   align-items: left;
   width: 100%;
   flex-grow: 1;
+  
 }
 
 .recipeButtons {
@@ -147,16 +150,13 @@ button {
   display: flex;
   margin-bottom: 10px;
   margin: 2px;
-  padding: 6px 6px;
+  padding: 3px 3px;
   font-size: 12px;
   cursor: pointer;
-  border: 8px;
-  border-width: 3px;
-  border-style: double;
-  border-color: rgb(85, 179, 101);
+  
   border-radius: 8px;
-  background-color: rgb(44, 30, 236);
-  color: blanchedalmond;
+  background-color: #351c38;
+  color: #00ffff;
 }
 
 

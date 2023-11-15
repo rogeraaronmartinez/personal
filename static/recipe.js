@@ -395,14 +395,28 @@ function displayRecipe(recipe) {
         directionsList.appendChild(listItem);
     });
 
+    function recipeLink() {
+        if (recipe.link != "") {
+            var a = document.createElement('a');
+            var linkText = document.createTextNode("Link to Recipe");
+            a.appendChild(linkText);
+            a.title = "Link to Recipe";
+            a.href = recipe.link;
+            a.target = "_blank";
+            recipeIngredientsAndDirections.appendChild(a);
+        }
+    };
+    
+
     recipeIngredientsAndDirections.innerHTML = '';
     recipeIngredientsAndDirections.appendChild(recipeName);
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Contributed By: ' + recipe.contributor ));
     recipeIngredientsAndDirections.appendChild(document.createElement("br"));
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Notes: ' + recipe.notes ));
     recipeIngredientsAndDirections.appendChild(document.createElement("br"));
-    recipeIngredientsAndDirections.appendChild(document.createTextNode('Link to Recipe: ' + recipe.link ));
-
+    recipeLink();
+    //recipeIngredientsAndDirections.appendChild(document.createTextNode('Link to Recipe: ' + recipe.link ));
+    
     recipeIngredientsAndDirections.appendChild(document.createElement("br"));
     recipeIngredientsAndDirections.appendChild(document.createElement("br"));
     recipeIngredientsAndDirections.appendChild(document.createTextNode('Ingredients:'));
