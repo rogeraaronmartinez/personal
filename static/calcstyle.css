@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1f1a;
+    font-family: monospace;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+
+
+h1 {
+    color: #ff4500;
+    animation-duration: 2s;
+    animation-name: textFlyIn;
+}
+
+@keyframes textFlyIn {
+    from {
+        margin-top: 100%;
+        height: 500%;
+    }
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-style: ridge;
+    border-radius: 6px;
+    border-width: 10px;
+    width: 479px;
+    animation-duration: 2s;
+    animation-name: flyIn;
+}
+
+@keyframes flyIn {
+    from {
+        margin-top: 100%;
+        height: 500%;
+    }
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+.previous-operation-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    height: 20px;
+    width: 479px;
+    background-color: #169651; 
+}
+
+.current-operation-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+    font-size: 28px;
+    height: 40px;
+    width: 479px;
+    background-color: #169651; 
+}
+.operator-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.number-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.number-rows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.operator-buttons button {
+    height: 40px;
+    width: 120px;
+    font-size: x-large;
+    background-color: #53a3ff;
+}
+
+.number-buttons button {
+    height: 40px;
+    width: 160px;
+    font-size: x-large;
+    background-color: #ff4500;
+}
+
+.homeLink {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+

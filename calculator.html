@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./static/calcstyle.css">
+</head>
+<body>
+    <header>
+        <div class="homeLink">
+            <a href="./index.html" id="guitarhome">Home</a>
+        </div>
+        <h1><em>A Simple Calculator !</em></h1>
+    </header>
+    <container class="calculator">
+        <div class="previous-operation-screen" id="previousOperationScreen"></div>
+        <div class="current-operation-screen" id="currentOperationScreen"></div>    
+        <div class="operator-buttons" id="operatorButtons">
+            <!--+, -, *, /-->
+            <button id="plus" data-operator>+</button>
+            <button id="minus" data-operator>-</button>
+            <button id="times" data-operator>*</button>
+            <button id="divideby" data-operator>/</button>
+        </div>
+        <div class="number-buttons" id="numberButtons">
+            <div class="number-rows" id="firstRow">
+                <!--1,2,3-->
+                <button id="one" data-number>1</button>
+                <button id="two" data-number>2</button>
+                <button id="three" data-number>3</button>
+            </div>
+            <div class="number-rows" id="secondRow">
+                <!--4,5,6-->
+                <button id="four" data-number>4</button>
+                <button id="five" data-number>5</button>
+                <button id="six" data-number>6</button>
+            </div>
+            <div class="number-rows" id="thirdRow">
+                <!--7, 8, 9-->
+                <button id="seven" data-number>7</button>
+                <button id="eight" data-number>8</button>
+                <button id="nine" data-number>9</button>
+            </div>
+            <div class="number-rows" id="fourthRow">
+                <!--0, =, clear keys-->
+                <button id="zero" data-number>0</button>
+                <button id="equalsButton">=</button>
+                <button id="clearButton">AC</button>
+            </div>
+        </div>
+
+
+    </container>
+
+    <script src="./static/calcscript.js"></script>
+</body>
+</html>
